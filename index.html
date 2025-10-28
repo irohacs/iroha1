@@ -137,8 +137,15 @@
     <main>
         <!-- Hero Section -->
         <section class="relative py-24 sm:py-32 hero-bg">
-            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+            <!-- ★★★ 修正点 ★★★ -->
+            <!-- flex-col（縦並び） を flex-col-reverse（逆順の縦並び） に変更 -->
+            <!-- これにより、スマホ表示（デフォルト）では画像が上に、テキストが下になります。 -->
+            <!-- md:（デスクトップ）では flex-row が適用されるため、レイアウトは維持されます。 -->
+            <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between">
+                
+                <!-- テキストブロック：スマホ表示で下に来る -->
+                <!-- ★★★ 修正点 ★★★ mb-12 を削除（画像側にマージンを移動） -->
+                <div class="md:w-1/2 text-center md:text-left">
                     <h1 class="text-3xl sm:text-5xl md:text-5xl font-bold text-gray-800 leading-tight">
                         その「装い」が、<br>あなたの価値を語り出す。
                     </h1>
@@ -151,9 +158,11 @@
                         あなたの「本当の魅力」を発見する
                     </a>
                 </div>
-                <div class="md:w-1/2 lg:w-2/5">
-               
-                    <img src="/images/top.png" alt="イメージコンサル">
+
+                <!-- 画像ブロック：スマホ表示で上に来る -->
+                <!-- ★★★ 修正点 ★★★ mb-12 md:mb-0 を追加（スマホ表示の際に、下のテキストとの間に余白を作るため） -->
+                <div class="md:w-1/2 lg:w-2/5 mb-12 md:mb-0">
+                    <img src="images/top.png" alt="イメージコンサル">
                 </div>
             </div>
         </section>
@@ -257,7 +266,8 @@
                             <!-- 
                               ↓↓↓ 事例画像（上記と同じ「ImgBB」の方法でURLを取得し、貼り付けてください） 
                             -->
-                            <img src="/images/casual.png" alt="カジュアル">
+                            <img src="images/casual.png" alt="カジュアル">
+
 
                             <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">Casual Friday</h3>
@@ -268,7 +278,7 @@
                             <!-- 
                               ↓↓↓ 事例画像（上記と同じ「ImgBB」の方法でURLを取得し、貼り付けてください） 
                             -->
-                           <img src="/images/days.png" alt="プレゼンテーション用">
+                           <img src="images/days.png" alt="スーツ">
                              <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">Presentation Day</h3>
                                 <p class="text-sm text-gray-600 font-light">説得力を高めるパワースーツ</p>
@@ -278,7 +288,7 @@
                             <!-- 
                               ↓↓↓ 事例画像（上記と同じ「ImgBB」の方法でURLを取得し、貼り付けてください） 
                             -->
-                             <img src="/images/event.png" alt="イベント用">
+                           <img src="images/event.png" alt="ドレス">
                              <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">Networking Event</h3>
                                 <p class="text-sm text-gray-600 font-light">華やかさと品格をプラス</p>
@@ -382,7 +392,8 @@
                 <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center bg-white p-10 rounded-lg shadow-xl">
                     <div class="md:w-1/3 text-center mb-6 md:mb-0">
                         <!-- ↓↓↓ あなたのプロフィール写真（ImgBBでURLを取得し、貼り付けてください） ↓↓↓ -->
-                        <a href="https://ibb.co/fdhMHgwG"><img src="https://i.ibb.co/Dfx4QJ2g/top.jpg" alt="top" border="0"></a>
+                        <img src="images/top .jfif" alt="スタイリスト">
+
                         <h3 class="text-xl font-bold text-gray-800 mt-4">Your Name</h3>
                         <p class="text-sm text-[#D6A25B] font-bold">パーソナルスタイリスト</p>
                     </div>
@@ -769,7 +780,3 @@
     </script>
 </body>
 </html>
-
-
-
-
