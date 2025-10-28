@@ -137,8 +137,15 @@
     <main>
         <!-- Hero Section -->
         <section class="relative py-24 sm:py-32 hero-bg">
-            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+            <!-- ★★★ 修正点 ★★★ -->
+            <!-- flex-col（縦並び） を flex-col-reverse（逆順の縦並び） に変更 -->
+            <!-- これにより、スマホ表示（デフォルト）では画像が上に、テキストが下になります。 -->
+            <!-- md:（デスクトップ）では flex-row が適用されるため、レイアウトは維持されます。 -->
+            <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center justify-between">
+                
+                <!-- テキストブロック：スマホ表示で下に来る -->
+                <!-- ★★★ 修正点 ★★★ mb-12 を削除（画像側にマージンを移動） -->
+                <div class="md:w-1/2 text-center md:text-left">
                     <h1 class="text-3xl sm:text-5xl md:text-5xl font-bold text-gray-800 leading-tight">
                         その「装い」が、<br>あなたの価値を語り出す。
                     </h1>
@@ -151,8 +158,10 @@
                         あなたの「本当の魅力」を発見する
                     </a>
                 </div>
-                <div class="md:w-1/2 lg:w-2/5">
-               
+
+                <!-- 画像ブロック：スマホ表示で上に来る -->
+                <!-- ★★★ 修正点 ★★★ mb-12 md:mb-0 を追加（スマホ表示の際に、下のテキストとの間に余白を作るため） -->
+                <div class="md:w-1/2 lg:w-2/5 mb-12 md:mb-0">
                     <img src="images/top.png" alt="イメージコンサル">
                 </div>
             </div>
@@ -771,7 +780,3 @@
     </script>
 </body>
 </html>
-
-
-
-
