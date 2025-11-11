@@ -3,36 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>成功するイメージコンサルタントLP（ビジネスウーマン特化版）</title>
+    <!-- ▼ SEOタイトル -->
+    <title>イメージコンサルサロン - Ricotta Nino -｜サユリコ!!（栃木）外見ブランディング</title>
+
+    <!-- ▼ SEOメタディスクリプション -->
+    <meta name="description" content="栃木拠点。カラー×ボディタイプ×髪型×“スター性”で第一印象を成果に。サユリコ!!が診断〜ワードローブ〜撮影・SNSまで伴走。airCloset現役。">
+
+    <!-- ▼ OG（必要に応じて og:image のパスを実ファイルに合わせて修正してください） -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sayurico-styling.com/">
+    <meta property="og:title" content="Ricotta Nino｜サユリコ!! 魅力発掘コーディネーター">
+    <meta property="og:description" content="カラー×ボディタイプ×髪型×“スター性”で“選ばれる外見”へ。airCloset現役／ブライダル・舞台衣装実績。">
+    <meta property="og:image" content="https://sayurico-styling.com/images/ogp.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LLLLQP6TPS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-LLLLQP6TPS');
-</script>    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLLLQP6TPS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LLLLQP6TPS');
+    </script>
 
+    <!-- ▼ 構造化データ（Organization + Person） -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://sayurico-styling.com/#organization",
+          "name": "イメージコンサルサロン - Ricotta Nino -",
+          "url": "https://sayurico-styling.com/",
+          "logo": "https://sayurico-styling.com/images/logo.png",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "栃木県",
+            "addressLocality": "小山市"
+          },
+          "sameAs": [
+            "https://www.instagram.com/sayu_rico?igsh=bjZyOGU2aDBuajgw"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://sayurico-styling.com/#person",
+          "name": "サユリコ!!",
+          "jobTitle": "魅力発掘コーディネーター",
+          "url": "https://sayurico-styling.com/",
+          "image": "https://sayurico-styling.com/images/profile.jpg",
+          "worksFor": {
+            "@id": "https://sayurico-styling.com/#organization"
+          },
+          "sameAs": [
+            "https://www.instagram.com/sayu_rico?igsh=bjZyOGU2aDBuajgw"
+          ]
+        }
+      ]
+    }
+    </script>
 
-<!-- Chosen Palette: Warm Neutrals & Subtle Gold -->
-    <!-- Application Structure Plan: このSPAは、栃木で働くビジネスウーマンのインサイト（キャリアと女性らしさの両立）に深く寄り添うLP構造を体験できます。基本的なLPフロー（悩み→解決→信頼→行動）は共通ですが、全セクションのコピーと訴求を女性向けに最適化。「悩み」セクションでは女性特有のジレンマを提示し、「サービス」では診断から実践までの一貫したサポートを明示。「お客様の声」で具体的なロールモデルを示すことで、「私にもできるかも」という自己投影を促し、行動（予約）へと導きます。 -->
-    <!-- Visualization & Content Choices: 
-        - 報告情報: ファッションへの意識とビジネス成果（女性版） -> ゴール: 「装い」が女性のキャリアを後押しする論理的根拠を示す -> Viz/手法: インタラクティブな棒グラフ(Chart.js/Canvas) -> インタラクション: ホバーで詳細表示 -> 正当化: 「美しくあること＝ビジネススキル」という新しい価値観をデータで裏付ける。
-        - 報告情報: ビジネスウーマン特有の悩み -> ゴール: ターゲットの深い共感を獲得し、自分事化させる -> Viz/手法: クリックで切り替わる「悩み」と「理想の未来」のカード(HTML/CSS/JS) -> インタラクション: 「悩み」カードクリックで対応する「理想の未来」が表示 -> 正当化: 「キツく見られたくない」「服を選ぶ時間がない」といったリアルな悩みを提示し、変革への期待を高める。
-        - 報告情報: 提供サービスプラン（女性向け） -> ゴール: 具体的で魅力的なサービス内容を提示 -> Viz/手法: タブ切り替え式のパネル(HTML/CSS/JS) -> インタラクション: タブクリックで表示プラン切替 -> 正当化: 「クローゼット診断」「ショッピング同行」など、理論と実践を両立するサポート内容を明確化し、納得感を醸成する。
-        - 報告情報: コンサルティングの具体的な流れ -> ゴール: サービス利用への安心感と期待感を醸成 -> Viz/手法: ステップごとの説明が表示されるプロセス図(HTML/CSS/JS) -> インタラクション: ステップ番号クリックで詳細を表示 -> 正当化: 科学的診断からワードローブ構築までの流れを可視化し、不安を解消する。
-        - 報告情報: よくある質問（女性特有） -> ゴール: 申込み前の最後の障壁を取り除く -> Viz/手法: アコーディオン形式のQ&A(HTML/CSS/JS) -> インタラクション: 質問クリックで回答が開閉 -> 正当化: 「手持ちの服を活かせる？」「子供の行事にも使える？」など、現実的な疑問に答えることで信頼を確立する。
-    -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body {
             font-family: 'Noto Sans JP', sans-serif;
             background-color: #FDFBF8;
-            color: #4A4A4A; /* 少し柔らかいダークグレー */
+            color: #4A4A4A;
             font-weight: 300;
             letter-spacing: 0.05em;
         }
@@ -61,7 +100,7 @@
             transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
         }
         .problem-card.active {
-            border-color: #D6A25B; /* エレガントなゴールド */
+            border-color: #D6A25B;
             background-color: #FFF;
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
@@ -79,7 +118,7 @@
             border-bottom-color: transparent;
         }
         .cta-button {
-            background-color: #3f3f46; /* プロフェッショナルなダークグレー */
+            background-color: #3f3f46;
             color: #FFFFFF;
             transition: background-color 0.3s, transform 0.3s;
             box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
@@ -91,7 +130,7 @@
             box-shadow: 0 6px 20px 0 rgba(0,0,0,0.15);
         }
         .hero-bg {
-            background-color: #F8F5F2; /* メインの背景より少し濃いベージュ */
+            background-color: #F8F5F2;
         }
         .section-title {
             font-size: 2.2rem;
@@ -108,8 +147,6 @@
             text-align: center;
             margin-bottom: 2rem;
         }
-
-        /* ▼▼▼ 新ヒーロー用のスタイルを追加 ▼▼▼ */
         .hero-visual {
             position: relative;
             width: 100%;
@@ -123,9 +160,9 @@
             content: "";
             position: absolute;
             inset: 0;
-            background-image: url("images/hero.jpg"); /* hero背景画像（例：hero.jfifをhero.jpgにリネーム） */
+            background-image: url("images/hero.jpg");
             background-size: cover;
-            background-position: top center; /* ←上が切れにくいように上側を優先表示 */
+            background-position: top center;
             background-repeat: no-repeat;
             z-index: 0;
         }
@@ -133,7 +170,6 @@
             content: "";
             position: absolute;
             inset: 0;
-            /* 左側はある程度読ませたいので、暗めのグラデを重ねる */
             background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.55) 70%);
             z-index: 1;
         }
@@ -195,17 +231,18 @@
                 padding-bottom: 3rem;
             }
         }
-        /* ▲▲▲ 新ヒーロー用のスタイルここまで ▲▲▲ */
-
     </style>
 </head>
 <body class="antialiased">
 
+    <!-- ▼ ブランド表記を統一 -->
     <header id="header" class="bg-white/90 backdrop-blur-lg border-b border-gray-200 sticky-header">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16 md:h-20">
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-xl font-bold text-gray-800 tracking-wider">Your Brand Styling</a>
+                    <a href="#" class="text-xl font-bold text-gray-800 tracking-wider">
+                        イメージコンサルサロン - Ricotta Nino -
+                    </a>
                 </div>
                 <nav class="hidden md:flex md:space-x-8">
                     <a href="#problem" class="text-gray-600 hover:text-[#D6A25B] transition-colors">こんな悩みは？</a>
@@ -213,7 +250,9 @@
                     <a href="#gallery" class="text-gray-600 hover:text-[#D6A25B] transition-colors">事例</a>
                     <a href="#testimonials" class="text-gray-600 hover:text-[#D6A25B] transition-colors">お客様の声</a>
                     <a href="#profile" class="text-gray-600 hover:text-[#D6A25B] transition-colors">プロフィール</a>
-                    <a href="https://timerex.net/s/loppy911818_e705/95aa8e7e" class="cta-button px-5 py-2 rounded-full text-sm">初回コンサルティング予約</a>
+                    <a href="https://timerex.net/s/loppy911818_e705/95aa8e7e" class="cta-button px-5 py-2 rounded-full text-sm">
+                        初回コンサルティング予約
+                    </a>
                 </nav>
                 <div class="md:hidden">
                     <button id="mobile-menu-button" class="text-gray-700 hover:text-gray-900">
@@ -230,13 +269,15 @@
             <a href="#gallery" class="block py-3 px-4 text-base text-gray-700 hover:bg-gray-50">事例</a>
             <a href="#testimonials" class="block py-3 px-4 text-base text-gray-700 hover:bg-gray-50">お客様の声</a>
             <a href="#profile" class="block py-3 px-4 text-base text-gray-700 hover:bg-gray-50">プロフィール</a>
-            <a href="https://timerex.net/s/loppy911818_e705/95aa8e7e" class="block py-4 px-4 text-base cta-button text-center m-4 rounded-full">初回コンサルティング予約</a>
+            <a href="https://timerex.net/s/loppy911818_e705/95aa8e7e" class="block py-4 px-4 text-base cta-button text-center m-4 rounded-full">
+                初回コンサルティング予約
+            </a>
         </div>
     </header>
 
     <main>
 
-        <!-- ▼▼▼ 新しい Hero Section に置き換え ▼▼▼ -->
+        <!-- ▼ ヒーロー：CTA文言統一＋メタ情報追記 -->
         <section class="hero-visual">
             <div class="hero-content">
                 <h1 class="hero-headline">
@@ -246,24 +287,22 @@
                 <p class="hero-body">
                     栃木のキャリア女性のための<br>
                     パーソナルスタイリング。<br><br>
-
                     「理論 × あなたの個性」で、<br>
                     成約率も単価も上げていく。<br><br>
-
                     好感度と信頼感をワンランク引き上げて、<br>
                     確実に選ばれる。
                 </p>
 
-               
+                <p class="hero-meta">
+                    60分｜オンライン／対面可｜今月の空き状況はカレンダーでご確認ください
+                </p>
 
                 <a href="https://timerex.net/s/loppy911818_e705/95aa8e7e" class="hero-cta">
-                    無料カウンセリングを予約する
+                    初回コンサルティングを予約する
                 </a>
             </div>
         </section>
-        <!-- ▲▲▲ ここまで Hero Section ▲▲▲ -->
 
-        <!-- Problem Section -->
         <section id="problem" class="py-20 sm:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">COMMON PROBLEMS</h2>
@@ -292,15 +331,12 @@
                         </div>
                     </div>
                     <div class="mt-12 bg-gray-50 p-8 rounded-lg shadow-inner min-h-[160px] flex items-center justify-center">
-                        <div id="solution-container" class="text-center">
-                            <!-- JSで内容が挿入されます -->
-                        </div>
+                        <div id="solution-container" class="text-center"></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Data/Reason Section -->
         <section class="py-20 sm:py-24 hero-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">FASHION AS SKILL</h2>
@@ -318,7 +354,6 @@
             </div>
         </section>
 
-        <!-- Services Section -->
         <section id="services" class="py-20 sm:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">OUR SERVICES</h2>
@@ -333,14 +368,11 @@
                         <button class="tab-button text-gray-500 py-3 px-6 text-lg transition-colors" data-tab-id="2">トータルプラン</button>
                         <button class="tab-button text-gray-500 py-3 px-6 text-lg transition-colors" data-tab-id="3">プレミアムプラン</button>
                     </div>
-                    <div id="service-contents">
-                        <!-- JSで内容が挿入されます -->
-                    </div>
+                    <div id="service-contents"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Gallery Section -->
         <section id="gallery" class="py-20 sm:py-24 hero-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">STYLING GALLERY</h2>
@@ -348,28 +380,33 @@
                 <div class="max-w-5xl mx-auto">
                     <p class="text-center text-gray-600 mb-12 font-light leading-relaxed">
                         理論に基づいたスタイリングで、お客様はこんなに変わります。※スタイリング例<br>
-                        
                     </p>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/casual.jpg" alt="カジュアル">
+                            <img src="images/casual.jpg"
+                                 alt="スタイリング事例：信頼感と抜け感を両立したオフィスカジュアルコーデ"
+                                 loading="lazy">
                             <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">カジュアル</h3>
                                 <p class="text-sm text-gray-600 font-light">信頼と抜け感のオフィスカジュアル</p>
                             </div>
                         </div>
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/days.jpg" alt="スーツ">
+                            <img src="images/days.jpg"
+                                 alt="スタイリング事例：プレゼンテーションで説得力を高めるエグゼクティブスタイル"
+                                 loading="lazy">
                             <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">プレゼンテーション</h3>
                                 <p class="text-sm text-gray-600 font-light">説得力を高めるエグゼクティブ・スタイル</p>
                             </div>
                         </div>
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/event.jpg" alt="ドレス">
+                            <img src="images/beauty-japan.jpg"
+                                 alt="スタイリング事例：ビューティージャパン出場者の舞台衣装コーディネート"
+                                 loading="lazy">
                             <div class="p-4">
-                                <h3 class="font-bold text-lg text-gray-800">ホリデー</h3>
-                                <p class="text-sm text-gray-600 font-light">品格をまとう、大人の休日コーデ</p>
+                                <h3 class="font-bold text-lg text-gray-800">ビューティージャパン衣装</h3>
+                                <p class="text-sm text-gray-600 font-light">舞台で“スター性”を引き出すドレスアップ</p>
                             </div>
                         </div>
                     </div>
@@ -377,7 +414,6 @@
             </div>
         </section>
 
-        <!-- Process Section -->
         <section id="process" class="py-20 sm:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">CONSULTING FLOW</h2>
@@ -399,17 +435,17 @@
                                 <li>
                                     <button class="step-button w-full text-left p-4 rounded-lg bg-white shadow-sm border-l-4 border-gray-200" data-step-id="2">
                                         <span class="text-sm font-bold text-gray-500">STEP 02</span>
-                                        <h4 class="text-lg font-bold text-gray-800 mt-1">各種診断（カラー・ボディ・髪型）</h4>
+                                        <h4 class="text-lg font-bold text-gray-800 mt-1">各種診断（カラー・ボディタイプ・髪型）</h4>
                                     </button>
                                 </li>
                                 <li>
-                                    <button class="step-button w-full text-left p-4 rounded-lg bg-white shadow-sm border-l-4 border-gray-200" data-step-id="3">
+                                    <button class="step-button w-full text-left p-4 rounded-lg bg白 shadow-sm border-l-4 border-gray-200" data-step-id="3">
                                         <span class="text-sm font-bold text-gray-500">STEP 03</span>
                                         <h4 class="text-lg font-bold text-gray-800 mt-1">クローゼット診断</h4>
                                     </button>
                                 </li>
                                 <li>
-                                    <button class="step-button w-full text左 p-4 rounded-lg bg-white shadow-sm border-l-4 border-gray-200" data-step-id="4">
+                                    <button class="step-button w-full text-left p-4 rounded-lg bg-white shadow-sm border-l-4 border-gray-200" data-step-id="4">
                                         <span class="text-sm font-bold text-gray-500">STEP 04</span>
                                         <h4 class="text-lg font-bold text-gray-800 mt-1">ショッピング同行</h4>
                                     </button>
@@ -417,24 +453,27 @@
                             </ul>
                         </div>
                         <div class="w-full md:w-2/3 bg-white p-8 rounded-lg shadow-lg min-h-[300px]">
-                            <div id="step-description">
-                                <!-- JSで内容が挿入されます -->
-                            </div>
+                            <div id="step-description"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
         <section id="testimonials" class="py-20 sm:py-24 hero-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">VOICE</h2>
                 <p class="section-subtitle">お客様の声</p>
+                <p class="text-center text-xs text-gray-500 mb-6">
+                    ※掲載許諾をいただいたお客様のみご紹介しています。
+                </p>
                 <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <div class="flex items-center mb-4">
-                            <img src="https://placehold.co/100x100/F0EAE4/4A4A4A?text=Client+1" alt="お客様（M.S様）の写真" class="w-16 h-16 rounded-full mr-4 object-cover">
+                            <img src="https://placehold.co/100x100/F0EAE4/4A4A4A?text=Client+1"
+                                 alt="宇都宮市在住・30代・保険営業 M.S様のプロフィール写真"
+                                 class="w-16 h-16 rounded-full mr-4 object-cover"
+                                 loading="lazy">
                             <div>
                                 <p class="font-bold text-gray-800">M.S様</p>
                                 <p class="text-sm text-gray-500">（宇都宮市・30代・保険営業）</p>
@@ -446,7 +485,10 @@
                     </div>
                     <div class="bg-white p-8 rounded-lg shadow-lg">
                         <div class="flex items-center mb-4">
-                            <img src="https://placehold.co/100x100/F0EAE4/4A4A4A?text=Client+2" alt="お客様（K.T様）の写真" class="w-16 h-16 rounded-full mr-4 object-cover">
+                            <img src="https://placehold.co/100x100/F0EAE4/4A4A4A?text=Client+2"
+                                 alt="小山市在住・40代・IT企業管理職 K.T様のプロフィール写真"
+                                 class="w-16 h-16 rounded-full mr-4 object-cover"
+                                 loading="lazy">
                             <div>
                                 <p class="font-bold text-gray-800">K.T様</p>
                                 <p class="text-sm text-gray-500">（小山市・40代・IT企業管理職）</p>
@@ -460,37 +502,40 @@
             </div>
         </section>
 
-        <!-- Profile Section -->
         <section id="profile" class="py-20 sm:py-24 bg-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">PROFILE</h2>
                 <p class="section-subtitle">コンサルタント紹介</p>
                 <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center bg-white p-10 rounded-lg shadow-xl">
                     <div class="md:w-1/3 text-center mb-6 md:mb-0">
-                        <img src="images/profile.jpg" alt="スタイリスト">
+                        <img src="images/profile.jpg"
+                             alt="イメージコンサルサロン - Ricotta Nino - サユリコ!!のプロフィール写真"
+                             loading="lazy">
                         <h3 class="text-xl font-bold text-gray-800 mt-4">サユリコ!!</h3>
                         <p class="text-sm text-[#D6A25B] font-bold">魅力発掘コーディネーター</p>
                     </div>
                     <div class="md:w-2/3 md:pl-10">
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4"></h4>
-                        <p class="text-gray-600 font-light leading-relaxed space-y-4">
-                            <span>
-                     
-栃木拠点。パーソナルカラー・ボディタイプ・髪型診断の理論に個性を掛け合わせ、第一印象を成果に変える“選ばれる外見”をデザインします。<br>
-ファッションレンタルのスタイリストを3社で経験し、現在も「airCloset（エアークローゼット）」で現役活動中。<br>
-過去には、結婚式場で衣装コーディネーターとしてウエディングドレス／タキシードとアクセサリーの提案・フィッティングを担当。
-現在は、8分類12タイプ法パーソナルカラー×ボディタイプ×似合う髪型に、西洋占星術・四柱推命で言語化する“スター性”を組み合わせ、診断→戦略設計→ワードローブ分析→ショッピング同行→撮影・SNSまで一気通貫で伴走。イベント出展・講師登壇や、ビューティージャパン出場者の舞台衣装も担当。 <br><br>
-
-成果例：成約率向上、単価アップ、指名増、撮影・登壇時の印象向上
-<br>対象：30〜50代のキャリア女性／女性起業家／女性経営者
-</span>
+                        <!-- ▼ 強み3ポイントを太字＋箇条書きで -->
+                        <ul class="mb-4 text-sm text-gray-700 space-y-1">
+                            <li><span class="font-bold">・ファッションレンタル「airCloset」現役スタイリスト</span></li>
+                            <li><span class="font-bold">・ブライダル衣装コーディネーターとしての豊富な経験</span></li>
+                            <li><span class="font-bold">・ビューティージャパン出場者の舞台衣装を担当</span></li>
+                        </ul>
+                        <p class="text-gray-600 font-light leading-relaxed">
+                            栃木拠点。パーソナルカラー・ボディタイプ・髪型診断の理論に個性を掛け合わせ、第一印象を成果に変える“選ばれる外見”をデザインします。<br>
+                            ファッションレンタルのスタイリストを3社で経験し、現在も「airCloset（エアークローゼット）」で現役活動中。<br>
+                            過去には、結婚式場で衣装コーディネーターとしてウエディングドレス／タキシードとアクセサリーの提案・フィッティングを担当。<br>
+                            現在は、8分類12タイプ法パーソナルカラー×ボディタイプ×似合う髪型に、西洋占星術・四柱推命で言語化する“スター性”を組み合わせ、診断→戦略設計→ワードローブ分析→ショッピング同行→撮影・SNSまで一気通貫で伴走。イベント出展・講師登壇や、ビューティージャパン出場者の舞台衣装も担当。
+                        </p>
+                        <p class="text-gray-600 font-light leading-relaxed mt-4">
+                            <span class="font-bold">成果例：</span>成約率向上、単価アップ、指名増、撮影・登壇時の印象向上<br>
+                            <span class="font-bold">対象：</span>30〜50代のキャリア女性／女性起業家／女性経営者
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ Section -->
         <section id="faq" class="py-20 sm:py-24 hero-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">Q & A</h2>
@@ -508,7 +553,7 @@
                         </div>
                     </div>
                     <div class="faq-item border-b border-gray-200 pb-4">
-                        <button class="faq-question w-full flex justify-between items-center text左 py-4">
+                        <button class="faq-question w-full flex justify-between items-center text-left py-4">
                             <span class="text-lg font-bold text-gray-800">Q. ハイブランドばかりの提案になりませんか？</span>
                             <span class="faq-icon text-2xl text-gray-500 font-light">+</span>
                         </button>
@@ -533,7 +578,6 @@
             </div>
         </section>
 
-        <!-- Call to Action Section -->
         <section id="cta" class="py-20 sm:py-24 bg-white text-center">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">
@@ -554,13 +598,17 @@
 
     <footer class="bg-gray-800 text-gray-300 py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p class="text-lg font-bold">Your Brand Styling</p>
+            <p class="text-lg font-bold">
+                イメージコンサルサロン - Ricotta Nino -
+            </p>
             <p class="mt-2 text-sm font-light">栃木県小山市（詳細はご予約時にお伝えします）</p>
             <div class="flex justify-center space-x-6 mt-4">
                 <a href="https://www.instagram.com/sayu_rico?igsh=bjZyOGU2aDBuajgw" class="hover:text-white">Instagram</a>
                 <a href="https://timerex.net/s/loppy911818_e705/95aa8e7e" class="hover:text-white">Contact</a>
             </div>
-            <p class="mt-8 text-xs text-gray-400">&copy; 2024 Your Brand Styling. All Rights Reserved.</p>
+            <p class="mt-8 text-xs text-gray-400">
+                &copy; 2024 イメージコンサルサロン - Ricotta Nino -. All Rights Reserved.
+            </p>
         </div>
     </footer>
 
@@ -635,7 +683,7 @@
                     updateSolution(problemId);
                 });
             });
-            updateSolution('1'); // Initial state
+            updateSolution('1');
 
             // Chart.js
             const chartCanvas = document.getElementById('impressionChart');
@@ -693,22 +741,24 @@
                 });
             }
 
-            // Services Section Tabs
+            // Services Section Tabs（プランmeta追加）
             const tabButtons = document.querySelectorAll('.tab-button');
             const serviceContents = document.getElementById('service-contents');
             const serviceData = {
                 1: {
                     title: 'ベーシックプラン：あなたの「似合う軸」を発見',
-                    description: 'まずはご自身の「魅力の軸」を知りたい方向けの基本プラン。各種診断（カラー・ボディ・髪型）を丁寧に行い、あなただけの「似合う」を理論的に解説します。',
+                    meta: '目安価格：22,000円（税込）／所要時間：60〜90分／納品物：診断結果＆魅力開花アドバイスシート（PDF）',
+                    description: 'まずはご自身の「魅力の軸」を知りたい方向けの基本プラン。各種診断（カラー・ボディタイプ・髪型）を丁寧に行い、あなただけの「似合う」を理論的に解説します。',
                     features: [
                         'オンラインカウンセリング（60分）',
-                        '各種診断（カラー・ボディ・髪型）',
+                        '各種診断（カラー・ボディタイプ・髪型）',
                         'あなただけの「魅力開花」アドバイスシート（PDF）',
                         'メイクカラーアドバイス'
                     ]
                 },
                 2: {
                     title: 'トータルプラン：理論を「実践」に変える',
+                    meta: '目安価格：49,500円（税込）／所要時間：3〜4時間／納品物：コーディネート例リスト＆買い足しリスト',
                     description: '「似合う」がわかったら、次はお手持ちの服で実践。クローゼットを拝見し、「似合う服」「手放す服」を仕分け。明日から迷わないコーディネート術をレクチャーします。',
                     features: [
                         'ベーシックプランの全内容',
@@ -719,10 +769,11 @@
                 },
                 3: {
                     title: 'プレミアムプラン：最高のあなたを「実装」する',
+                    meta: '目安価格：88,000円（税込）／所要時間：1日（分割も可）／納品物：ワードローブ戦略シート＆ショッピングリスト',
                     description: '理論から実践、そして「新しい服の購入」までをトータルでサポート。あなたの魅力を最大限に引き出す服を、プロの目線で一緒に選び抜きます。',
                     features: [
                         'トータルプランの全内容',
-                        'ショッピング同行（3時間・宇都宮・小山・佐野市内・.etc）',
+                        'ショッピング同行（3時間・宇都宮・小山・佐野市内 ほか）',
                         '購入アイテムでの着回しアドバイス',
                         '3ヶ月間のLINEファッション相談サポート'
                     ]
@@ -735,6 +786,7 @@
                     serviceContents.innerHTML = `
                         <div class="bg-white p-8 rounded-lg shadow-xl border border-gray-100 animate-fade-in">
                             <h3 class="text-2xl font-bold text-gray-800 text-center mb-4">${data.title}</h3>
+                            <p class="text-sm text-gray-500 text-center mb-3">${data.meta}</p>
                             <p class="text-gray-600 text-center mb-8 font-light">${data.description}</p>
                             <ul class="space-y-3 max-w-md mx-auto">
                                 ${data.features.map(feature => `
@@ -758,7 +810,7 @@
                 });
             });
             if (tabButtons.length > 0) {
-                updateService('1'); // Initial state
+                updateService('1');
             }
 
             // Process Section
@@ -770,7 +822,7 @@
                     text: 'まず、あなたの現在のお悩み、ライフスタイル、なりたい未来のイメージを詳しくお伺いします。ファッションに関するお悩みだけでなく、キャリアプランなどもお聞かせください。ここでゴールを共有することが、成功への第一歩です。'
                 },
                 2: {
-                    title: 'STEP 02: 各種診断（カラー・ボディ・髪型）',
+                    title: 'STEP 02: 各種診断（カラー・ボディタイプ・髪型）',
                     text: '8分類12タイプ法パーソナルカラー診断、ボディタイプ診断、似合う髪型診断を行います。ドレープ（布）を当てたり、お顔のパーツバランスを分析したりしながら、あなたの「似合う」を多角的に、かつ理論的に導き出します。'
                 },
                 3: {
@@ -810,7 +862,7 @@
                 });
             });
             if (stepButtons.length > 0) {
-                updateStep('1'); // Initial state
+                updateStep('1');
             }
 
             // FAQ Accordion
