@@ -231,6 +231,30 @@
                 padding-bottom: 3rem;
             }
         }
+
+        /* ------------------------- */
+        /* ここから“はみ出し対策”追記 */
+        /* ------------------------- */
+
+        /* 水平はみ出しを全体で抑制 */
+        html, body {
+            overflow-x: hidden;
+        }
+        /* 余白計算のズレを抑える */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        /* メディア要素は親幅を超えさせない */
+        img, video, canvas, svg, iframe {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* 長い英単語等でのはみ出し抑制（必要に応じて） */
+        body {
+            word-wrap: break-word;
+            overflow-wrap: anywhere;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -340,7 +364,7 @@
         <section class="py-20 sm:py-24 hero-bg">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="section-title">FASHION AS SKILL</h2>
-                <p class="section-subtitle">「装い」は、ビジネススキルです。</p>
+            <p class="section-subtitle">「装い」は、ビジネススキルです。</p>
                 <div class="max-w-4xl mx-auto">
                     <p class="text-center text-gray-600 mb-12 font-light leading-relaxed">
                         「センス」は生まれつきのものではなく、理論で習得できる「技術」です。<br>
@@ -385,7 +409,7 @@
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                             <img src="images/casual.jpg"
                                  alt="スタイリング事例：信頼感と抜け感を両立したオフィスカジュアルコーデ"
-                                 loading="lazy">
+                                 loading="lazy" class="w-full h-auto">
                             <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">カジュアル</h3>
                                 <p class="text-sm text-gray-600 font-light">信頼と抜け感のオフィスカジュアル</p>
@@ -394,14 +418,14 @@
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                             <img src="images/days.jpg"
                                  alt="スタイリング事例：プレゼンテーションで説得力を高めるエグゼクティブスタイル"
-                                 loading="lazy">
+                                 loading="lazy" class="w-full h-auto">
                             <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">プレゼンテーション</h3>
                                 <p class="text-sm text-gray-600 font-light">説得力を高めるエグゼクティブ・スタイル</p>
                             </div>
                         </div>
                         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                            <img src="images/event.jpg" alt="ドレス">
+                            <img src="images/event.jpg" alt="ドレス" class="w-full h-auto">
                             <div class="p-4">
                                 <h3 class="font-bold text-lg text-gray-800">ホリデー</h3>
                                 <p class="text-sm text-gray-600 font-light">品格をまとう、大人の休日コーデ</p>
@@ -438,7 +462,8 @@
                                     </button>
                                 </li>
                                 <li>
-                                    <button class="step-button w-full text-left p-4 rounded-lg bg白 shadow-sm border-l-4 border-gray-200" data-step-id="3">
+                                    <!-- ★ 修正: bg白 -> bg-white -->
+                                    <button class="step-button w-full text-left p-4 rounded-lg bg-white shadow-sm border-l-4 border-gray-200" data-step-id="3">
                                         <span class="text-sm font-bold text-gray-500">STEP 03</span>
                                         <h4 class="text-lg font-bold text-gray-800 mt-1">クローゼット診断</h4>
                                     </button>
@@ -475,7 +500,7 @@
                                  loading="lazy">
                             <div>
                                 <p class="font-bold text-gray-800">M.S様</p>
-                                <p class="text-sm text-gray-500">（宇都宮市・30代・保険営業）</p>
+                                <p class="text-sm text-gray-500">（小山市・40代・IT企業管理職）</p>
                             </div>
                         </div>
                         <p class="text-gray-600 font-light leading-relaxed">
@@ -509,7 +534,7 @@
                     <div class="md:w-1/3 text-center mb-6 md:mb-0">
                         <img src="images/profile.jpg"
                              alt="イメージコンサルサロン - Ricotta Nino - サユリコ!!のプロフィール写真"
-                             loading="lazy">
+                             loading="lazy" class="w-full h-auto">
                         <h3 class="text-xl font-bold text-gray-800 mt-4">サユリコ!!</h3>
                         <p class="text-sm text-[#D6A25B] font-bold">魅力発掘コーディネーター</p>
                     </div>
