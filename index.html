@@ -255,6 +255,59 @@
             word-wrap: break-word;
             overflow-wrap: anywhere;
         }
+
+/* ===== 安定版：グローバル最小限 ===== */
+html, body { overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+img, video, canvas, svg, iframe { max-width: 100%; height: auto; display: block; }
+
+/* ===== ヒーロー（背景・配置・改行） ===== */
+.hero-visual {
+  background-position: center center !important;
+  background-size: cover;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+/* 共通のコンテンツ箱 */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  color: #fff;
+  width: 90%;
+  max-width: 680px;
+  margin-left: clamp(1rem, 4vw, 4rem);
+  margin-right: clamp(1rem, 4vw, 2rem);
+  text-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* 改行の崩れ防止（和文禁則＋バランス） */
+.hero-headline, .hero-body, .hero-meta {
+  overflow-wrap: normal;
+  word-break: keep-all;
+  line-break: strict;
+  text-wrap: balance;
+}
+
+/* 見出しと本文の間隔 */
+.hero-headline { line-height: 1.3; margin-bottom: 1.8rem; }
+
+/* CTAは中央・改行なし */
+.hero-cta { display: inline-block; white-space: nowrap; margin: 1.75rem auto 0; text-align: center; }
+
+/* --- レスポンシブ調整 --- */
+@media (min-width: 641px) {           /* PC/タブレット */
+  .hero-content { margin-top: 18vh; margin-bottom: 12vh; }  /* 顔を見せつつCTAが入る */
+}
+
+@media (max-width: 640px) {           /* スマホ */
+  .hero-content { margin-top: 30vh; margin-bottom: 10vh; max-width: 34ch; }
+}
+
+
     </style>
 </head>
 <body class="antialiased">
@@ -317,10 +370,7 @@
                     確実に選ばれる。
                 </p>
 
-                <p class="hero-meta">
-                    60分｜オンライン／対面可｜今月の空き状況はカレンダーでご確認ください
-                </p>
-
+            
                 <a href="https://timerex.net/s/loppy911818_e705/95aa8e7e" class="hero-cta">
                     初回コンサルティング予約
                 </a>
